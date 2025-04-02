@@ -1,0 +1,25 @@
+{
+  "name": "ai-app-builder-server",
+  "version": "0.1.0",
+  "description": "Backend server for the AI App Builder MVP, handling API requests and LLM interactions.",
+  "main": "src/server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "express": "5.1.0",
+    "openai": "4.91.1",
+    "dotenv": "16.4.7",
+    "cors": "2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.9",
+    "vitest": "3.1.1"
+  }
+}
