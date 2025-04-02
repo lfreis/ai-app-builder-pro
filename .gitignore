@@ -1,0 +1,62 @@
+# Specifies intentionally untracked files and directories that Git should ignore.
+# For more information: https://git-scm.com/docs/gitignore
+
+# Dependencies
+# Ignore node_modules directories at the root, client, and server levels.
+/node_modules
+/client/node_modules
+/server/node_modules
+
+# Build Output / Distribution
+# Ignore the Vite client build output directory and other common build outputs.
+/client/dist
+/build
+
+# Environment & Configuration
+# CRITICAL: Ignore the root .env file containing secrets.
+# Also ignore other .env variations but allow example/template files.
+/.env
+.env.*
+!.env.example
+!.env.template
+
+# Logs
+# Ignore common log files and package manager debug logs.
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Operating System Files
+# Ignore macOS and Windows specific system files.
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# IDE / Editor Configuration
+# Ignore common IDE/editor configuration directories and files.
+# Allow sharing specific VSCode settings if needed (like extensions).
+.idea/
+.vscode/
+!.vscode/extensions.json
+.project
+.settings/
+.classpath
+.c9/
+*.sw*
+
+# Testing Artifacts
+# Ignore test coverage output directories.
+/coverage
+/client/coverage
+/server/coverage
+
+# Nodemon
+# Ignore nodemon configuration file if used locally (often not committed).
+nodemon.json
