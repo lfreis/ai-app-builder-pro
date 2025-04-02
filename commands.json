@@ -1,0 +1,42 @@
+{
+  "root": {
+    "installation": {
+      "all": "npm install && npm install --prefix client && npm install --prefix server"
+    },
+    "development": {
+      "concurrent": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\""
+    },
+    "build": {
+      "client": "npm run build --prefix client"
+    },
+    "production_start": {
+      "server_only": "node server/src/server.js"
+    }
+  },
+  "client": {
+    "development": {
+      "start": "vite",
+      "preview": "vite preview"
+    },
+    "build": {
+      "default": "vite build"
+    },
+    "linting": {
+      "run": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+    },
+    "testing": {
+      "run": "vitest run"
+    }
+  },
+  "server": {
+    "development": {
+      "start": "nodemon src/server.js"
+    },
+    "production_start": {
+      "default": "node src/server.js"
+    },
+    "testing": {
+      "run": "vitest run"
+    }
+  }
+}
