@@ -24,7 +24,27 @@ router.post('/', async (req, res) => {
   if (body.features && !Array.isArray(body.features)) {
     return res.status(400).json({ error: 'Invalid type for features, expected array.' });
   }
-  // Add more specific checks if needed (e.g., feature array elements are strings)
+
+  // Enforce length limits and reject control characters to mitigate prompt injection
+  // via oversized or crafted input flowing into the LLM prompt.
+  const MAX_NAME_LEN = 100;
+  const MAX_DESC_LEN = 1000;
+  const MAX_FEATURES = 20;
+  const MAX_FEATURE_LEN = 200;
+  const hasControlChars = (str) => /[\x00-\x08\x0B\x0C\x0E-\x1F]/.test(str);
+
+  if (body.appName && (body.appName.length > MAX_NAME_LEN || hasControlChars(body.appName))) {
+    return res.status(400).json({ error: 'Invalid appName: exceeds length limit or contains invalid characters.' });
+  }
+  if (body.description && (body.description.length > MAX_DESC_LEN || hasControlChars(body.description))) {
+    return res.status(400).json({ error: 'Invalid description: exceeds length limit or contains invalid characters.' });
+  }
+  if (body.features) {
+    if (body.features.length > MAX_FEATURES ||
+        !body.features.every((f) => typeof f === 'string' && f.length <= MAX_FEATURE_LEN && !hasControlChars(f))) {
+      return res.status(400).json({ error: 'Invalid features: each must be a string within length limits and free of invalid characters.' });
+    }
+  }
 
   try {
     // Call the llmService to generate application code
