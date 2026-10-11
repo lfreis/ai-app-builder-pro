@@ -4,8 +4,21 @@ import { generateAppCode } from '../services/llmService.js';
 // Create an instance of Express Router
 const router = Router();
 
+// Require a valid API key on every request to this route.
+// Prevents anonymous/unauthenticated abuse of the (costly) LLM generation endpoint.
+function requireApiKey(req, res, next) {
+  const expectedKey = process.env.APP_API_KEY;
+  const providedKey = req.get('x-api-key');
+
+  if (!expectedKey || !providedKey || providedKey !== expectedKey) {
+    return res.status(401).json({ error: 'Unauthorized: missing or invalid API key.' });
+  }
+
+  return next();
+}
+
 // Define the route handler for POST /api/generate
-router.post('/', async (req, res) => {
+router.post('/', requireApiKey, async (req, res) => {
   // Validate request body structure and basic types
   const { body } = req;
 
